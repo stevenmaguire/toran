@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+SRC_DIR="`pwd`"
+cd "`dirname "$0"`"
+cd "../vendor/composer/composer/bin"
+BIN_TARGET="`pwd`/composer"
+cd "$SRC_DIR"
+"$BIN_TARGET" "$@"
